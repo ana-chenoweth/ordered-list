@@ -26,6 +26,8 @@ public:
     ListaOrdenada(const ListaOrdenada<T>& lc);
     void AgregarOrdenado(T valor);
     void Eliminar(T valor);
+    bool Buscar(T valor) const;
+    bool EstaVacia() const;
 };
 
 #include "ListaOrdenada.tpp"

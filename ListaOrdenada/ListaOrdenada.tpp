@@ -41,3 +41,8 @@ template <typename T>
 bool ListaOrdenada<T>::Buscar(T valor) const {
     return listaDesordenada.BuscarValor(valor);
 }
+//************************************************************************************************
+template <typename T>
+bool ListaOrdenada<T>::EstaVacia() const {
+    return listaDesordenada.EstaVacia();
+}
