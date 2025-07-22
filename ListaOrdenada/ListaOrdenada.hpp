@@ -22,6 +22,8 @@ private:
 public:
     ListaOrdenada();
     ~ListaOrdenada();
+    ListaOrdenada<T>& operator=(const ListaOrdenada<T>& Otralista);
+    ListaOrdenada(const ListaOrdenada<T>& lc);
 };
 
 #include "ListaOrdenada.tpp"
