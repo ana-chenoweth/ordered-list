@@ -20,6 +20,8 @@ private:
     ListaDoble2<T> listaDesordenada;
 
 public:
+    class ListaVacia {};
+    class FueraRango {};
     ListaOrdenada();
     ~ListaOrdenada();
     ListaOrdenada<T>& operator=(const ListaOrdenada<T>& Otralista);
@@ -29,6 +31,8 @@ public:
     bool Buscar(T valor) const;
     bool EstaVacia() const;
     int Tamano() const;
+    void ImprimirAscendente() const;
+    void ImprimirDescendente() const;
 };
 
 #include "ListaOrdenada.tpp"

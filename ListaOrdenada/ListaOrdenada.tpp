@@ -51,3 +51,13 @@ template <typename T>
 int ListaOrdenada<T>::Tamano() const {
     return listaDesordenada.ObtenerTam();
 }
+//************************************************************************************************
+template <typename T>
+void ListaOrdenada<T>::ImprimirAscendente() const {
+    listaDesordenada.Imprimir();
+}
+//************************************************************************************************
+template <typename T>
+void ListaOrdenada<T>::ImprimirDescendente() const {
+    listaDesordenada.ImprimirReversa();
+}
