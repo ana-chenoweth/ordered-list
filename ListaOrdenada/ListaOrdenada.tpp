@@ -36,3 +36,8 @@ template <typename T>
 void ListaOrdenada<T>::Eliminar(T valor) {
     listaDesordenada.EliminarPrimeraOcurrencia(valor);
 }
+//************************************************************************************************
+template <typename T>
+bool ListaOrdenada<T>::Buscar(T valor) const {
+    return listaDesordenada.BuscarValor(valor);
+}
