@@ -46,3 +46,8 @@ template <typename T>
 bool ListaOrdenada<T>::EstaVacia() const {
     return listaDesordenada.EstaVacia();
 }
+//************************************************************************************************
+template <typename T>
+int ListaOrdenada<T>::Tamano() const {
+    return listaDesordenada.ObtenerTam();
+}

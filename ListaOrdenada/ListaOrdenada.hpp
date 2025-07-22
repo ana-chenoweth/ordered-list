@@ -28,6 +28,7 @@ public:
     void Eliminar(T valor);
     bool Buscar(T valor) const;
     bool EstaVacia() const;
+    int Tamano() const;
 };
 
 #include "ListaOrdenada.tpp"
