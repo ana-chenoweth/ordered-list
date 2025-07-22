@@ -31,3 +31,8 @@ void ListaOrdenada<T>::AgregarOrdenado(T valor) {
         listaDesordenada.AgregarPos(valor, pos);
     }
 }
+//************************************************************************************************
+template <typename T>
+void ListaOrdenada<T>::Eliminar(T valor) {
+    listaDesordenada.EliminarPrimeraOcurrencia(valor);
+}
