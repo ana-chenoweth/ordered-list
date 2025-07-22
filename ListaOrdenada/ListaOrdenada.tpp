@@ -61,3 +61,38 @@ template <typename T>
 void ListaOrdenada<T>::ImprimirDescendente() const {
     listaDesordenada.ImprimirReversa();
 }
+//************************************************************************************************
+template <typename T>
+ListaOrdenada<T> ListaOrdenada<T>::Mezclar(const ListaOrdenada<T>& otraLista) {
+    ListaOrdenada<T> resultado;
+    int tam1 = this->Tamano();
+    int tam2 = otraLista.Tamano();
+    int i = 0, j = 0;
+
+    while (i < tam1 && j < tam2) {
+        T elem1 = listaDesordenada[i];
+        T elem2 = otraLista.listaDesordenada[j];
+
+        if (elem1 <= elem2) {
+            resultado.AgregarOrdenado(elem1);
+            ++i;
+        } else {
+            resultado.AgregarOrdenado(elem2);
+            ++j;
+        }
+    }
+
+    while (i < tam1) {
+        T elem1 = listaDesordenada[i];
+        resultado.AgregarOrdenado(elem1);
+        ++i;
+    }
+
+    while (j < tam2) {
+        T elem2 = otraLista.listaDesordenada[j];
+        resultado.AgregarOrdenado(elem2);
+        ++j;
+    }
+
+    return resultado;
+}

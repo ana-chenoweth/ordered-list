@@ -33,6 +33,7 @@ public:
     int Tamano() const;
     void ImprimirAscendente() const;
     void ImprimirDescendente() const;
+    ListaOrdenada<T> Mezclar(const ListaOrdenada<T>& otraLista);
 };
 
 #include "ListaOrdenada.tpp"
