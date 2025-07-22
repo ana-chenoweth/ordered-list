@@ -21,6 +21,7 @@ private:
 
 public:
     ListaOrdenada();
+    ~ListaOrdenada();
 };
 
 #include "ListaOrdenada.tpp"
