@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modificarpos_0',['ModificarPos',['../class_lista_doble2.html#a6217a077f3179beaa152cf59c9134503',1,'ListaDoble2']]]
+  ['operator_3d_0',['operator=',['../class_lista_ordenada.html#a3162327efdfd84826ad1cfe81155341b',1,'ListaOrdenada']]]
 ];

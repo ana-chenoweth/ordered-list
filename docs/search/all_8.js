@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numelementos_0',['NumElementos',['../class_lista_doble2.html#a652f8247f173ce737af1b90fd0929931',1,'ListaDoble2']]]
+  ['tamano_0',['Tamano',['../class_lista_ordenada.html#a51b12edc8950d1e18a37575c90ff1f26',1,'ListaOrdenada']]]
 ];
