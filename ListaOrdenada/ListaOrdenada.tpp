@@ -24,7 +24,7 @@ void ListaOrdenada<T>::AgregarOrdenado(T valor) {
     if (listaDesordenada.EstaVacia())
         listaDesordenada.AgregarInicio(valor);
     else {
-        int tam = listaDesordenada.ObtenerTam();
+        int tam = listaDesordenada.NumElementos();
         int pos;
         for (pos = 0; pos < tam && listaDesordenada.ObtenerPorPos(pos) < valor; pos++)
             ;
@@ -34,7 +34,7 @@ void ListaOrdenada<T>::AgregarOrdenado(T valor) {
 //************************************************************************************************
 template <typename T>
 void ListaOrdenada<T>::Eliminar(T valor) {
-    listaDesordenada.EliminarPrimeraOcurrencia(valor);
+    listaDesordenada.EliminarTodasOcurrencias(valor);
 }
 //************************************************************************************************
 template <typename T>
@@ -49,7 +49,7 @@ bool ListaOrdenada<T>::EstaVacia() const {
 //************************************************************************************************
 template <typename T>
 int ListaOrdenada<T>::Tamano() const {
-    return listaDesordenada.ObtenerTam();
+    return listaDesordenada.NumElementos();
 }
 //************************************************************************************************
 template <typename T>
