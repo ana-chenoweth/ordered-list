@@ -12,6 +12,7 @@ The list maintains its elements in **ascending order** and includes standard ope
 
 ---
 
+<img src="img/program.png" alt="Example Use" width="600">
 
 ---
 
